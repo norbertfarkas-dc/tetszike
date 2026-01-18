@@ -1,11 +1,72 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
-<Layout>
-	<Welcome />
-</Layout>
+<BaseLayout title="TETSZIK – Tegyünk Egymásért">
+
+  <!-- HERO -->
+  <section class="relative mb-24 bg-gradient-to-br from-green-50 via-white to-blue-50 p-10 md:p-20 rounded-3xl text-center overflow-hidden">
+    <h1 class="text-4xl md:text-5xl font-extrabold mb-6 max-w-3xl mx-auto text-gray-900">
+      TETSZIK – Mert számíthatunk egymásra
+    </h1>
+    <p class="text-lg text-gray-700 max-w-2xl mx-auto mb-8 leading-relaxed">
+      Tegyünk egymásért! A közösség ereje akár csodákra is képes.
+      Hiszünk abban, hogy az odafordulás, a figyelem és az együttműködés
+      valódi változást hozhat.
+    </p>
+    <a href="/rolunk" class="inline-block px-8 py-4 bg-blue-600 text-white font-semibold rounded-xl shadow-lg hover:bg-blue-700 transition">
+      Tudj meg többet
+    </a>
+    <div class="absolute top-0 right-0 w-64 h-64 bg-blue-100 rounded-full mix-blend-multiply opacity-30 -translate-x-1/2 -translate-y-1/2"></div>
+  </section>
+
+  <!-- MIÉRT VAGYUNK ITT -->
+  <section class="mb-24 max-w-4xl mx-auto px-6">
+    <h2 class="text-3xl font-bold mb-6 text-gray-900">Miért vagyunk itt?</h2>
+    <p class="text-gray-700 mb-4 leading-relaxed">
+      Mindig vannak élethelyzetek, amelyek megszólítanak, amelyek mellett nem lehet elmenni.
+      Egyesületünk tagjai olyan szociálisan érzékeny emberek, akik korábban is részt vettek karitatív tevékenységekben.
+    </p>
+    <p class="text-gray-700 leading-relaxed">
+      Célunk, hogy olyan közösségi ügyeket és nehéz élethelyzeteket támogassunk,
+      ahová kevesebb figyelem jut, és ahol a segítség felelősen, átgondolt módon szervezhető meg.
+    </p>
+  </section>
+
+  <!-- ALAPELVEK -->
+  <section class="mb-24 bg-gradient-to-r from-green-50 via-white to-blue-50 p-8 md:p-16 rounded-3xl">
+    <h2 class="text-3xl font-bold mb-10 text-center text-gray-900">Működésünk alapelvei</h2>
+    <div class="grid gap-8 md:grid-cols-3">
+      <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
+        <h3 class="font-semibold mb-2 text-blue-600">Kölcsönösség</h3>
+        <p class="text-gray-600">
+          A segítség közösségi ügy. Ma te kapsz, holnap te adhatsz.
+        </p>
+      </div>
+      <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
+        <h3 class="font-semibold mb-2 text-blue-600">Méltóság</h3>
+        <p class="text-gray-600">
+          Minden ember érték. A nehéz élethelyzet nem határozza meg, kik vagyunk.
+        </p>
+      </div>
+      <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
+        <h3 class="font-semibold mb-2 text-blue-600">Közösség</h3>
+        <p class="text-gray-600">
+          A valódi segítség legtöbbször összefogásból születik.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEGYÜNK EGYÜTT -->
+  <section class="bg-gradient-to-r from-blue-50 to-green-50 p-10 md:p-16 rounded-3xl text-center">
+    <h2 class="text-3xl font-bold mb-6 text-gray-900">Tegyünk együtt!</h2>
+    <p class="text-gray-700 mb-8 max-w-2xl mx-auto text-lg leading-relaxed">
+      Minden apró segítség számít. Ha együttműködésben gondolkodik, vagy támogatná az egyesület céljait, örömmel vesszük a megkeresését.
+    </p>
+    <a href="/kapcsolat" class="inline-block bg-blue-600 text-white px-8 py-4 rounded-2xl font-semibold shadow hover:bg-blue-700 transition">
+      Kapcsolatfelvétel
+    </a>
+  </section>
+
+</BaseLayout>

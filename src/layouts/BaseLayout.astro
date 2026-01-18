@@ -1,0 +1,25 @@
+---
+import "../styles/global.css";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+
+const { title = "TETSZIK Egyesület" } = Astro.props;
+---
+
+<html lang="hu">
+  <head>
+    <meta charset="utf-8" />
+    <title>{title}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body class="font-sans bg-white text-gray-900 antialiased">
+    <Header />
+
+    <!-- Main content -->
+    <main class="min-h-screen px-6 md:px-16 max-w-7xl mx-auto">
+      <slot />
+    </main>
+
+    <Footer />
+  </body>
+</html>
