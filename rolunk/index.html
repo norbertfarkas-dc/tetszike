@@ -1,6 +1,22 @@
-<!DOCTYPE html><html lang="hu"> <head><meta charset="utf-8"><title>Rólunk – Tetszik Egyesület</title><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/assets/index.nc3-hnGm.css"></head> <body class="font-sans bg-white text-gray-900 antialiased"> <header class="bg-white shadow-md py-6 px-6 mb-12"> <div class="max-w-7xl mx-auto flex justify-between items-center"> <a href="/" class="text-2xl md:text-3xl font-bold text-blue-600 hover:text-blue-700 transition">
-TETSZIK
-</a> <!-- Desktop menü --> <nav class="hidden md:flex space-x-6 text-gray-700 font-medium"> <a href="/" class="hover:text-blue-600 transition">Főoldal</a> <a href="/rolunk" class="hover:text-blue-600 transition">Rólunk</a> <a href="/kapcsolat" class="hover:text-blue-600 transition">Kapcsolat</a> </nav> <!-- Hamburger ikon mobilon --> <button id="hamburger" class="md:hidden text-gray-700 focus:outline-none z-50"> <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path> </svg> </button> </div> <!-- Mobil menü --> <nav id="mobileMenu" class="md:hidden fixed inset-0 bg-white bg-opacity-95 z-40 flex flex-col items-center justify-center space-y-10 text-2xl transform -translate-y-full transition-transform duration-300"> <a href="/" class="hover:text-blue-600 transition">Főoldal</a> <a href="/rolunk" class="hover:text-blue-600 transition">Rólunk</a> <a href="/kapcsolat" class="hover:text-blue-600 transition">Kapcsolat</a> </nav> <!-- Kis JS a menü toggle-hoz --> <script type="module">
+<!DOCTYPE html><html lang="hu"> <head><meta charset="utf-8"><title>Rólunk – Tetszik Egyesület</title><meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Favicon --><link rel="icon" type="image/svg+xml" href="/logo.svg"><link rel="stylesheet" href="/assets/index.IimVak-4.css"></head> <body class="antialiased"> <header class="py-6 px-6 mb-12 shadow-md
+         bg-[color:var(--brand-card-bg)]"> <div class="max-w-7xl mx-auto flex justify-between items-center"> <a href="/"> <img src="/logo.svg" alt="TETSZIK Logo" class="h-16"> </a> <!-- Desktop menü --> <nav class="hidden md:flex space-x-6 font-medium
+             text-[color:var(--brand-text-muted)]"> <a href="/" class="transition hover:text-[color:var(--brand-accent)]">
+Főoldal
+</a> <a href="/rolunk" class="transition hover:text-[color:var(--brand-accent)]">
+Rólunk
+</a> <a href="/kapcsolat" class="transition hover:text-[color:var(--brand-accent)]">
+Kapcsolat
+</a> </nav> <!-- Hamburger ikon mobilon --> <button id="hamburger" class="md:hidden focus:outline-none z-50
+             text-[color:var(--brand-text-muted)]"> <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path> </svg> </button> </div> <!-- Mobil menü --> <nav id="mobileMenu" class="md:hidden fixed inset-0 z-40 flex flex-col items-center justify-center
+           space-y-10 text-2xl transform -translate-y-full transition-transform duration-300
+           bg-[color:var(--brand-card-bg)] bg-opacity-95
+           text-[color:var(--brand-text-muted)]"> <a href="/" class="transition hover:text-[color:var(--brand-accent)]">
+Főoldal
+</a> <a href="/rolunk" class="transition hover:text-[color:var(--brand-accent)]">
+Rólunk
+</a> <a href="/kapcsolat" class="transition hover:text-[color:var(--brand-accent)]">
+Kapcsolat
+</a> </nav> <!-- Kis JS a menü toggle-hoz --> <script type="module">
     const btn = document.getElementById('hamburger');
     const menu = document.getElementById('mobileMenu');
     let open = false;
@@ -9,7 +25,7 @@ TETSZIK
       if (open) {
         menu.classList.remove('-translate-y-full');
         menu.classList.add('translate-y-0');
-        btn.innerHTML = `<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        btn.innerHTML = `<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                   d="M6 18L18 6M6 6l12 12" />
                          </svg>`;
@@ -22,8 +38,102 @@ TETSZIK
                          </svg>`;
       }
     });
-  </script> </header> <!-- Main content --> <main class="min-h-screen px-6 md:px-16 max-w-7xl mx-auto">   <section class="text-center mb-16 px-6"> <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">Rólunk</h1> <p class="text-gray-700 max-w-2xl mx-auto leading-relaxed">
+  </script> </header> <!-- Main content --> <main class="min-h-screen px-6 md:px-16 max-w-7xl mx-auto">   <section class="text-center mb-16 px-6"> <h1 class="text-4xl md:text-5xl font-extrabold mb-4
+             text-[color:var(--brand-text-main)]">
+Rólunk
+</h1> <p class="max-w-2xl mx-auto leading-relaxed
+             text-[color:var(--brand-text-muted)]">
 Az egyesület célja, hogy segítséget nyújtson a közösségünknek, támogassa a rászorulókat, és erősítse az összefogást.
-</p> </section>  <section class="max-w-5xl mx-auto mb-16 px-6 grid md:grid-cols-3 gap-8"> <div class="bg-gradient-to-r from-green-50 via-white to-blue-50 p-8 rounded-3xl shadow hover:shadow-lg transition text-center"> <h2 class="text-xl font-bold text-blue-600 mb-2">Közösség</h2> <p class="text-gray-700">Olyan közösséget építünk, ahol mindenki számíthat egymásra.</p> </div> <div class="bg-gradient-to-r from-green-50 via-white to-blue-50 p-8 rounded-3xl shadow hover:shadow-lg transition text-center"> <h2 class="text-xl font-bold text-blue-600 mb-2">Segítség</h2> <p class="text-gray-700">A rászorulók támogatása és figyelem a legfontosabb számunkra.</p> </div> <div class="bg-gradient-to-r from-green-50 via-white to-blue-50 p-8 rounded-3xl shadow hover:shadow-lg transition text-center"> <h2 class="text-xl font-bold text-blue-600 mb-2">Együttműködés</h2> <p class="text-gray-700">Hisszük, hogy a közös munka, összefogás valódi változást hozhat.</p> </div> </section>  <section class="max-w-6xl mx-auto px-6 mb-24"> <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Csapatunk</h2> <div class="grid gap-8 md:grid-cols-3"> <div class="bg-white p-6 rounded-3xl shadow hover:shadow-lg transition text-center"> <div class="w-24 h-24 mx-auto rounded-full bg-blue-100 mb-4 flex items-center justify-center text-blue-600 font-bold text-xl">A</div> <h3 class="text-xl font-semibold mb-1">Anna Kovács</h3> <p class="text-gray-600 text-sm">Elnök</p> </div> <div class="bg-white p-6 rounded-3xl shadow hover:shadow-lg transition text-center"> <div class="w-24 h-24 mx-auto rounded-full bg-blue-100 mb-4 flex items-center justify-center text-blue-600 font-bold text-xl">B</div> <h3 class="text-xl font-semibold mb-1">Bence Nagy</h3> <p class="text-gray-600 text-sm">Alapító</p> </div> <div class="bg-white p-6 rounded-3xl shadow hover:shadow-lg transition text-center"> <div class="w-24 h-24 mx-auto rounded-full bg-blue-100 mb-4 flex items-center justify-center text-blue-600 font-bold text-xl">C</div> <h3 class="text-xl font-semibold mb-1">Csilla Farkas</h3> <p class="text-gray-600 text-sm">Önkéntes koordinátor</p> </div> </div> </section>  </main> <footer class="bg-gradient-to-r from-green-50 via-white to-blue-50 py-12 mt-24"> <div class="max-w-7xl mx-auto px-6"> <p class="text-gray-700 mb-4">
+</p> </section>  <section class="max-w-5xl mx-auto mb-16 px-6 grid md:grid-cols-3 gap-8"> <div class="p-8 rounded-3xl shadow hover:shadow-lg transition text-center
+             bg-gradient-to-r
+             from-[color:var(--brand-bg-soft-green)]
+             via-white
+             to-[color:var(--brand-bg-soft-blue)]"> <h2 class="text-xl font-bold mb-2
+               text-[color:var(--brand-accent)]">
+Közösség
+</h2> <p class="text-[color:var(--brand-text-muted)]">
+Olyan közösséget építünk, ahol mindenki számíthat egymásra.
+</p> </div> <div class="p-8 rounded-3xl shadow hover:shadow-lg transition text-center
+             bg-gradient-to-r
+             from-[color:var(--brand-bg-soft-green)]
+             via-white
+             to-[color:var(--brand-bg-soft-blue)]"> <h2 class="text-xl font-bold mb-2
+               text-[color:var(--brand-accent)]">
+Segítség
+</h2> <p class="text-[color:var(--brand-text-muted)]">
+A rászorulók támogatása és figyelem a legfontosabb számunkra.
+</p> </div> <div class="p-8 rounded-3xl shadow hover:shadow-lg transition text-center
+             bg-gradient-to-r
+             from-[color:var(--brand-bg-soft-green)]
+             via-white
+             to-[color:var(--brand-bg-soft-blue)]"> <h2 class="text-xl font-bold mb-2
+               text-[color:var(--brand-accent)]">
+Együttműködés
+</h2> <p class="text-[color:var(--brand-text-muted)]">
+Hisszük, hogy a közös munka, összefogás valódi változást hozhat.
+</p> </div> </section>  <section class="max-w-6xl mx-auto px-6 mb-24"> <h2 class="text-3xl font-bold mb-8 text-center
+             text-[color:var(--brand-text-main)]">
+Csapatunk
+</h2> <div class="grid gap-8 md:grid-cols-3"> <div class="p-6 rounded-3xl shadow hover:shadow-lg transition text-center
+               bg-[color:var(--brand-card-bg)]"> <div class="w-24 h-24 mx-auto rounded-full mb-4 flex items-center justify-center font-bold text-xl
+                 bg-[color:var(--brand-accent-soft)]
+                 text-[color:var(--brand-accent)]">
+A
+</div> <h3 class="text-xl font-semibold mb-1 text-[color:var(--brand-text-main)]">
+Anna Kovács
+</h3> <p class="text-sm
+                 text-[color:var(--brand-text-muted)]">
+Elnök
+</p> </div> <div class="p-6 rounded-3xl shadow hover:shadow-lg transition text-center
+               bg-[color:var(--brand-card-bg)]"> <div class="w-24 h-24 mx-auto rounded-full mb-4 flex items-center justify-center font-bold text-xl
+                 bg-[color:var(--brand-accent-soft)]
+                 text-[color:var(--brand-accent)]">
+B
+</div> <h3 class="text-xl font-semibold mb-1 text-[color:var(--brand-text-main)]">
+Bence Nagy
+</h3> <p class="text-sm
+                 text-[color:var(--brand-text-muted)]">
+Alapító
+</p> </div> <div class="p-6 rounded-3xl shadow hover:shadow-lg transition text-center
+               bg-[color:var(--brand-card-bg)]"> <div class="w-24 h-24 mx-auto rounded-full mb-4 flex items-center justify-center font-bold text-xl
+                 bg-[color:var(--brand-accent-soft)]
+                 text-[color:var(--brand-accent)]">
+C
+</div> <h3 class="text-xl font-semibold mb-1 text-[color:var(--brand-text-main)]">
+Csilla Farkas
+</h3> <p class="text-sm
+                 text-[color:var(--brand-text-muted)]">
+Önkéntes koordinátor
+</p> </div> </div> </section>  </main> <footer class="py-12 mt-24 bg-gradient-to-r
+         from-[color:var(--brand-bg-soft-green)]
+         via-white
+         to-[color:var(--brand-bg-soft-blue)]"> <div class="max-w-7xl mx-auto px-6"> <p class="mb-4
+             text-[color:var(--brand-text-muted)]">
 &copy; 2026 TETSZIK Egyesület. Minden jog fenntartva.
-</p> <div class="flex justify-center space-x-6 mb-4"> <a href="#" class="text-gray-700 hover:text-blue-600 transition">Facebook</a> <a href="#" class="text-gray-700 hover:text-blue-600 transition">Instagram</a> <a href="#" class="text-gray-700 hover:text-blue-600 transition">LinkedIn</a> </div> </div> </footer> </body></html>
+</p> <div class="flex justify-center space-x-6 mb-4"> <a href="#" class="transition
+               text-[color:var(--brand-text-muted)]
+               hover:text-[color:var(--brand-accent)]">
+Facebook
+</a> <a href="#" class="transition
+               text-[color:var(--brand-text-muted)]
+               hover:text-[color:var(--brand-accent)]">
+Instagram
+</a> <a href="#" class="transition
+               text-[color:var(--brand-text-muted)]
+               hover:text-[color:var(--brand-accent)]">
+LinkedIn
+</a> </div> </div> </footer> <!-- Cookie bar --> <div id="cookie-bar" class="fixed bottom-6 left-1/2 -translate-x-1/2 max-w-3xl w-[calc(100%-2rem)]
+             bg-[color:var(--brand-card-bg)]
+             border border-[color:var(--brand-text-muted)]
+             shadow-lg rounded-2xl p-4
+             flex flex-col md:flex-row items-start md:items-center justify-between gap-4
+             opacity-0 translate-y-4 transition-all duration-300 z-50"> <p class="text-sm leading-relaxed text-[color:var(--brand-text-muted)]">
+Ez a weboldal kizárólag a működéshez szükséges technikai cookie-kat használja.
+<a href="/adatkezelesi-tajekoztato" class="hover:underline
+                 text-[color:var(--brand-accent)]">
+Adatkezelési tájékoztató
+</a> </p> <button id="cookie-close" class="shrink-0 px-4 py-2 rounded-xl text-white text-sm font-semibold transition
+               bg-[color:var(--brand-accent)]
+               hover:bg-[color:var(--brand-accent-hover)]">
+Rendben
+</button> </div> <script type="module">const e="cookie_info_seen",t=document.getElementById("cookie-bar"),s=document.getElementById("cookie-close");localStorage.getItem(e)||setTimeout(()=>{t.classList.remove("opacity-0","translate-y-4"),t.classList.add("opacity-100","translate-y-0")},300);s.addEventListener("click",()=>{localStorage.setItem(e,"true"),t.classList.add("opacity-0","translate-y-4"),t.classList.remove("opacity-100","translate-y-0"),setTimeout(()=>{t.style.display="none"},300)});</script> </body> </html>

@@ -1,6 +1,22 @@
-<!DOCTYPE html><html lang="hu"> <head><meta charset="utf-8"><title>Kapcsolat – Tetszik Egyesület</title><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/assets/index.nc3-hnGm.css"></head> <body class="font-sans bg-white text-gray-900 antialiased"> <header class="bg-white shadow-md py-6 px-6 mb-12"> <div class="max-w-7xl mx-auto flex justify-between items-center"> <a href="/" class="text-2xl md:text-3xl font-bold text-blue-600 hover:text-blue-700 transition">
-TETSZIK
-</a> <!-- Desktop menü --> <nav class="hidden md:flex space-x-6 text-gray-700 font-medium"> <a href="/" class="hover:text-blue-600 transition">Főoldal</a> <a href="/rolunk" class="hover:text-blue-600 transition">Rólunk</a> <a href="/kapcsolat" class="hover:text-blue-600 transition">Kapcsolat</a> </nav> <!-- Hamburger ikon mobilon --> <button id="hamburger" class="md:hidden text-gray-700 focus:outline-none z-50"> <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path> </svg> </button> </div> <!-- Mobil menü --> <nav id="mobileMenu" class="md:hidden fixed inset-0 bg-white bg-opacity-95 z-40 flex flex-col items-center justify-center space-y-10 text-2xl transform -translate-y-full transition-transform duration-300"> <a href="/" class="hover:text-blue-600 transition">Főoldal</a> <a href="/rolunk" class="hover:text-blue-600 transition">Rólunk</a> <a href="/kapcsolat" class="hover:text-blue-600 transition">Kapcsolat</a> </nav> <!-- Kis JS a menü toggle-hoz --> <script type="module">
+<!DOCTYPE html><html lang="hu"> <head><meta charset="utf-8"><title>Kapcsolat – Tetszik Egyesület</title><meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Favicon --><link rel="icon" type="image/svg+xml" href="/logo.svg"><link rel="stylesheet" href="/assets/index.IimVak-4.css"></head> <body class="antialiased"> <header class="py-6 px-6 mb-12 shadow-md
+         bg-[color:var(--brand-card-bg)]"> <div class="max-w-7xl mx-auto flex justify-between items-center"> <a href="/"> <img src="/logo.svg" alt="TETSZIK Logo" class="h-16"> </a> <!-- Desktop menü --> <nav class="hidden md:flex space-x-6 font-medium
+             text-[color:var(--brand-text-muted)]"> <a href="/" class="transition hover:text-[color:var(--brand-accent)]">
+Főoldal
+</a> <a href="/rolunk" class="transition hover:text-[color:var(--brand-accent)]">
+Rólunk
+</a> <a href="/kapcsolat" class="transition hover:text-[color:var(--brand-accent)]">
+Kapcsolat
+</a> </nav> <!-- Hamburger ikon mobilon --> <button id="hamburger" class="md:hidden focus:outline-none z-50
+             text-[color:var(--brand-text-muted)]"> <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path> </svg> </button> </div> <!-- Mobil menü --> <nav id="mobileMenu" class="md:hidden fixed inset-0 z-40 flex flex-col items-center justify-center
+           space-y-10 text-2xl transform -translate-y-full transition-transform duration-300
+           bg-[color:var(--brand-card-bg)] bg-opacity-95
+           text-[color:var(--brand-text-muted)]"> <a href="/" class="transition hover:text-[color:var(--brand-accent)]">
+Főoldal
+</a> <a href="/rolunk" class="transition hover:text-[color:var(--brand-accent)]">
+Rólunk
+</a> <a href="/kapcsolat" class="transition hover:text-[color:var(--brand-accent)]">
+Kapcsolat
+</a> </nav> <!-- Kis JS a menü toggle-hoz --> <script type="module">
     const btn = document.getElementById('hamburger');
     const menu = document.getElementById('mobileMenu');
     let open = false;
@@ -9,7 +25,7 @@ TETSZIK
       if (open) {
         menu.classList.remove('-translate-y-full');
         menu.classList.add('translate-y-0');
-        btn.innerHTML = `<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        btn.innerHTML = `<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                   d="M6 18L18 6M6 6l12 12" />
                          </svg>`;
@@ -22,20 +38,78 @@ TETSZIK
                          </svg>`;
       }
     });
-  </script> </header> <!-- Main content --> <main class="min-h-screen px-6 md:px-16 max-w-7xl mx-auto">   <section class="text-center mb-16"> <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">Kapcsolat</h1> <p class="text-gray-700 max-w-2xl mx-auto leading-relaxed">
+  </script> </header> <!-- Main content --> <main class="min-h-screen px-6 md:px-16 max-w-7xl mx-auto">   <section class="text-center mb-16"> <h1 class="text-4xl md:text-5xl font-extrabold mb-4
+             text-[color:var(--brand-text-main)]">
+Kapcsolat
+</h1> <p class="max-w-2xl mx-auto leading-relaxed
+             text-[color:var(--brand-text-muted)]">
 Ha szeretnél kapcsolatba lépni velünk, az alábbi elérhetőségeken megteheted.  
       Örömmel válaszolunk minden kérdésre!
-</p> </section>  <section class="max-w-4xl mx-auto mb-16 px-6 grid md:grid-cols-2 gap-8"> <div class="bg-gradient-to-r from-green-50 via-white to-blue-50 p-8 rounded-3xl shadow hover:shadow-lg transition"> <h2 class="text-2xl font-bold text-blue-600 mb-4">Elérhetőségek</h2> <ul class="text-gray-700 space-y-2"> <li> <strong>Email:</strong> <a href="mailto:tetszikegyesulet@email.hu" class="text-blue-600 hover:underline">
-tetszikegyesulet@email.hu
+</p> </section>  <section class="max-w-4xl mx-auto mb-16 px-6 grid md:grid-cols-2 gap-8"> <div class="p-8 rounded-3xl shadow hover:shadow-lg transition
+             bg-gradient-to-r
+             from-[color:var(--brand-bg-soft-green)]
+             via-white
+             to-[color:var(--brand-bg-soft-blue)]"> <h2 class="text-2xl font-bold mb-4
+               text-[color:var(--brand-accent)]">
+Elérhetőségek
+</h2> <ul class="space-y-2 text-[color:var(--brand-text-muted)]"> <li> <strong>Email:</strong> <a href="mailto:tetszikegyesulet@email.hu" class="hover:underline
+                   text-[color:var(--brand-accent)]">
+[tetszikegyesulet@email.hu](mailto:tetszikegyesulet@email.hu)
 </a> </li> <li> <strong>Székhely:</strong> Budapest, …
 </li> <li> <strong>Telefon:</strong> +36 …
-</li> </ul> </div> <!-- Kapcsolat űrlap --> <div class="bg-white p-8 rounded-3xl shadow hover:shadow-lg transition"> <h2 class="text-2xl font-bold text-blue-600 mb-6 text-center">Írj nekünk!</h2> <form class="space-y-4"> <input type="text" placeholder="Név" class="w-full p-3 border rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-300"> <input type="email" placeholder="Email" class="w-full p-3 border rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-300"> <textarea placeholder="Üzenet" class="w-full p-3 border rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-300 h-32 resize-none"></textarea> <button type="submit" class="w-full py-3 bg-blue-600 text-white font-semibold rounded-xl hover:bg-blue-700 transition">
+</li> </ul> </div> <!-- Kapcsolat űrlap --> <div class="p-8 rounded-3xl shadow hover:shadow-lg transition
+             bg-[color:var(--brand-card-bg)]"> <h2 class="text-2xl font-bold mb-6 text-center
+               text-[color:var(--brand-accent)]">
+Írj nekünk!
+</h2> <!-- Rejtett iframe a form POST-hoz --> <iframe name="hidden_iframe" style="display:none;"></iframe> <!-- Toast üzenet --> <div id="toast" class="fixed top-6 right-6 px-6 py-4 rounded-2xl shadow-lg opacity-0 transform translate-y-2 transition-all duration-300 pointer-events-none z-50
+               bg-[color:var(--brand-accent)]
+               text-[color:var(--brand-card-bg)]">
+Köszönjük, az üzeneted elküldve!
+</div> <form id="contactForm" class="space-y-4" action="https://docs.google.com/forms/d/e/1FAIpQLSfOnBYLEELs6QSw_Z0zFGH0fZCw6t9E9V6qhXA-NC7wou8KoA/formResponse" method="POST" target="hidden_iframe"> <input type="text" name="entry.1981496630" placeholder="Név" class="w-full p-3 border rounded-xl focus:outline-none
+                 focus:ring-2 focus:ring-[color:var(--brand-accent)]" required> <input type="email" name="entry.1968220818" placeholder="Email" class="w-full p-3 border rounded-xl focus:outline-none
+                 focus:ring-2 focus:ring-[color:var(--brand-accent)]" required> <textarea name="entry.104769852" placeholder="Üzenet" class="w-full p-3 border rounded-xl focus:outline-none h-32 resize-none
+                 focus:ring-2 focus:ring-[color:var(--brand-accent)]" required></textarea> <button type="submit" class="w-full py-3 text-white font-semibold rounded-xl transition
+                 bg-[color:var(--brand-accent)]
+                 hover:bg-[color:var(--brand-accent-hover)]">
 Küldés
-</button> </form> </div> </section>  <section class="text-center mb-24"> <p class="text-gray-700 max-w-2xl mx-auto mb-6">
+</button> </form> </div> </section>  <section class="text-center mb-24"> <p class="max-w-2xl mx-auto mb-6
+             text-[color:var(--brand-text-muted)]">
 Szeretnél önkénteskedni, vagy támogatnád céljainkat?  
       Várjuk megkeresésedet!
-</p> <a href="/rolunk" class="inline-block px-8 py-4 bg-green-600 text-white font-semibold rounded-2xl shadow hover:bg-green-700 transition">
+</p> <a href="rolunk" class="inline-block px-8 py-4 text-white font-semibold rounded-2xl shadow transition
+             bg-[color:var(--brand-accent)]
+             hover:bg-[color:var(--brand-accent-hover)]">
 Rólunk többet
-</a> </section>  </main> <footer class="bg-gradient-to-r from-green-50 via-white to-blue-50 py-12 mt-24"> <div class="max-w-7xl mx-auto px-6"> <p class="text-gray-700 mb-4">
+</a> </section>  </main> <footer class="py-12 mt-24 bg-gradient-to-r
+         from-[color:var(--brand-bg-soft-green)]
+         via-white
+         to-[color:var(--brand-bg-soft-blue)]"> <div class="max-w-7xl mx-auto px-6"> <p class="mb-4
+             text-[color:var(--brand-text-muted)]">
 &copy; 2026 TETSZIK Egyesület. Minden jog fenntartva.
-</p> <div class="flex justify-center space-x-6 mb-4"> <a href="#" class="text-gray-700 hover:text-blue-600 transition">Facebook</a> <a href="#" class="text-gray-700 hover:text-blue-600 transition">Instagram</a> <a href="#" class="text-gray-700 hover:text-blue-600 transition">LinkedIn</a> </div> </div> </footer> </body></html>
+</p> <div class="flex justify-center space-x-6 mb-4"> <a href="#" class="transition
+               text-[color:var(--brand-text-muted)]
+               hover:text-[color:var(--brand-accent)]">
+Facebook
+</a> <a href="#" class="transition
+               text-[color:var(--brand-text-muted)]
+               hover:text-[color:var(--brand-accent)]">
+Instagram
+</a> <a href="#" class="transition
+               text-[color:var(--brand-text-muted)]
+               hover:text-[color:var(--brand-accent)]">
+LinkedIn
+</a> </div> </div> </footer> <!-- Cookie bar --> <div id="cookie-bar" class="fixed bottom-6 left-1/2 -translate-x-1/2 max-w-3xl w-[calc(100%-2rem)]
+             bg-[color:var(--brand-card-bg)]
+             border border-[color:var(--brand-text-muted)]
+             shadow-lg rounded-2xl p-4
+             flex flex-col md:flex-row items-start md:items-center justify-between gap-4
+             opacity-0 translate-y-4 transition-all duration-300 z-50"> <p class="text-sm leading-relaxed text-[color:var(--brand-text-muted)]">
+Ez a weboldal kizárólag a működéshez szükséges technikai cookie-kat használja.
+<a href="/adatkezelesi-tajekoztato" class="hover:underline
+                 text-[color:var(--brand-accent)]">
+Adatkezelési tájékoztató
+</a> </p> <button id="cookie-close" class="shrink-0 px-4 py-2 rounded-xl text-white text-sm font-semibold transition
+               bg-[color:var(--brand-accent)]
+               hover:bg-[color:var(--brand-accent-hover)]">
+Rendben
+</button> </div> <script type="module">const e="cookie_info_seen",t=document.getElementById("cookie-bar"),s=document.getElementById("cookie-close");localStorage.getItem(e)||setTimeout(()=>{t.classList.remove("opacity-0","translate-y-4"),t.classList.add("opacity-100","translate-y-0")},300);s.addEventListener("click",()=>{localStorage.setItem(e,"true"),t.classList.add("opacity-0","translate-y-4"),t.classList.remove("opacity-100","translate-y-0"),setTimeout(()=>{t.style.display="none"},300)});</script> </body> </html> <script type="module">const s=document.getElementById("contactForm"),e=document.getElementById("toast");s.addEventListener("submit",function(a){a.preventDefault();const t=s.cloneNode(!0);t.style.display="none",t.target="hidden_iframe",document.body.appendChild(t),t.submit(),document.body.removeChild(t),s.reset(),e.classList.remove("opacity-0","translate-y-2"),e.classList.add("opacity-100","translate-y-0"),setTimeout(()=>{e.classList.add("opacity-0","translate-y-2"),e.classList.remove("opacity-100","translate-y-0")},4e3)});</script>
